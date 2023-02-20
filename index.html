@@ -3,12 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Nightmare Run</title>
+    <title>Nightmare Run</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    
   </head>
-  <body>
-    <div id="unity-container" class="unity-desktop">
+  <body class="container bg-dark">
+      <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    <h1>Nightmare Run</h1>
+
+        </ul>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="container text-white pb-auto">
+    <h2>Abstract</h2>
+    <p>An action based 2d side scroller game project about an old man who lost his life Energy and fell into a nightmare. The main component of the game should be to combat different kinds of enemies and obstacles to gain more energy (score) and to get out of the nightmare reality by defeating the final enemy to get his diary back.</p>
+    <h2>Mechanics & Plot</h2>
+
+    <p>
+      The game plays in a metropolis full of machines that set to exterminate any remaining life that isn’t automated. The main hero finds himself in his worst nightmare, a city without life. He needs to fight through enemies, collect energy to escape the place. As a traditional side scroller, the player advances from left to right fighting enemies. The player can shoot with infinite ammo. The core mechanics is to survive by the end of the level as much energy points as possible. </p>
+  </div>
+  <div class="container mt-auto">
+    <div id="unity-container" class=" container py-4 ">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -16,15 +43,18 @@
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
+
+      
       <div id="unity-mobile-warning">
         WebGL builds are not supported on mobile devices.
       </div>
       <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Nightmare Run</div>
       </div>
     </div>
+  </div>
+
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/nightmare_run.loader.js";
